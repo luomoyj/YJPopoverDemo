@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6D2DE21E135DB100C1DFCD /* YJPopViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6D2DE11E135DB100C1DFCD /* YJPopViewManager.m */; };
 		2F7BB7A51E1242B7004B9C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7A41E1242B7004B9C5A /* main.m */; };
 		2F7BB7A81E1242B7004B9C5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7A71E1242B7004B9C5A /* AppDelegate.m */; };
 		2F7BB7AB1E1242B7004B9C5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7AA1E1242B7004B9C5A /* ViewController.m */; };
 		2F7BB7AE1E1242B7004B9C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BB7AC1E1242B7004B9C5A /* Main.storyboard */; };
 		2F7BB7B01E1242B7004B9C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BB7AF1E1242B7004B9C5A /* Assets.xcassets */; };
 		2F7BB7B31E1242B7004B9C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BB7B11E1242B7004B9C5A /* LaunchScreen.storyboard */; };
+		2F7BB7C21E124DB4004B9C5A /* YJPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7BD1E124DB4004B9C5A /* YJPopoverView.m */; };
+		2F7BB7C61E124EE0004B9C5A /* YJPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7C41E124EE0004B9C5A /* YJPopoverController.m */; };
+		2F7BB7CB1E12580D004B9C5A /* YJPopoverContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BB7C91E12580D004B9C5A /* YJPopoverContentController.m */; };
+		2F7BB7CC1E12580D004B9C5A /* YJPopoverContentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BB7CA1E12580D004B9C5A /* YJPopoverContentController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6D2DE01E135DB100C1DFCD /* YJPopViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPopViewManager.h; sourceTree = "<group>"; };
+		2F6D2DE11E135DB100C1DFCD /* YJPopViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPopViewManager.m; sourceTree = "<group>"; };
+		2F6D2DE31E135ED200C1DFCD /* popoverDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popoverDemo.pch; sourceTree = "<group>"; };
+		2F6D2DE41E135F8700C1DFCD /* YJ_const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJ_const.h; sourceTree = "<group>"; };
 		2F7BB7A01E1242B7004B9C5A /* YJPopoverDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJPopoverDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7BB7A41E1242B7004B9C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F7BB7A61E1242B7004B9C5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +35,13 @@
 		2F7BB7AF1E1242B7004B9C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7BB7B21E1242B7004B9C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7BB7B41E1242B7004B9C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7BB7BD1E124DB4004B9C5A /* YJPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPopoverView.m; sourceTree = "<group>"; };
+		2F7BB7BF1E124DB4004B9C5A /* YJPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPopoverView.h; sourceTree = "<group>"; };
+		2F7BB7C31E124EE0004B9C5A /* YJPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPopoverController.h; sourceTree = "<group>"; };
+		2F7BB7C41E124EE0004B9C5A /* YJPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPopoverController.m; sourceTree = "<group>"; };
+		2F7BB7C81E12580D004B9C5A /* YJPopoverContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPopoverContentController.h; sourceTree = "<group>"; };
+		2F7BB7C91E12580D004B9C5A /* YJPopoverContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPopoverContentController.m; sourceTree = "<group>"; };
+		2F7BB7CA1E12580D004B9C5A /* YJPopoverContentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJPopoverContentController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +78,21 @@
 				2F7BB7A71E1242B7004B9C5A /* AppDelegate.m */,
 				2F7BB7A91E1242B7004B9C5A /* ViewController.h */,
 				2F7BB7AA1E1242B7004B9C5A /* ViewController.m */,
+				2F7BB7C81E12580D004B9C5A /* YJPopoverContentController.h */,
+				2F7BB7C91E12580D004B9C5A /* YJPopoverContentController.m */,
+				2F7BB7CA1E12580D004B9C5A /* YJPopoverContentController.xib */,
+				2F7BB7C31E124EE0004B9C5A /* YJPopoverController.h */,
+				2F7BB7C41E124EE0004B9C5A /* YJPopoverController.m */,
+				2F7BB7BF1E124DB4004B9C5A /* YJPopoverView.h */,
+				2F7BB7BD1E124DB4004B9C5A /* YJPopoverView.m */,
+				2F6D2DE01E135DB100C1DFCD /* YJPopViewManager.h */,
+				2F6D2DE11E135DB100C1DFCD /* YJPopViewManager.m */,
+				2F6D2DE41E135F8700C1DFCD /* YJ_const.h */,
 				2F7BB7AC1E1242B7004B9C5A /* Main.storyboard */,
 				2F7BB7AF1E1242B7004B9C5A /* Assets.xcassets */,
 				2F7BB7B11E1242B7004B9C5A /* LaunchScreen.storyboard */,
 				2F7BB7B41E1242B7004B9C5A /* Info.plist */,
+				2F6D2DE31E135ED200C1DFCD /* popoverDemo.pch */,
 				2F7BB7A31E1242B7004B9C5A /* Supporting Files */,
 			);
 			path = YJPopoverDemo;
@@ -139,6 +166,7 @@
 				2F7BB7B31E1242B7004B9C5A /* LaunchScreen.storyboard in Resources */,
 				2F7BB7B01E1242B7004B9C5A /* Assets.xcassets in Resources */,
 				2F7BB7AE1E1242B7004B9C5A /* Main.storyboard in Resources */,
+				2F7BB7CC1E12580D004B9C5A /* YJPopoverContentController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7BB7C61E124EE0004B9C5A /* YJPopoverController.m in Sources */,
+				2F7BB7CB1E12580D004B9C5A /* YJPopoverContentController.m in Sources */,
 				2F7BB7AB1E1242B7004B9C5A /* ViewController.m in Sources */,
 				2F7BB7A81E1242B7004B9C5A /* AppDelegate.m in Sources */,
+				2F6D2DE21E135DB100C1DFCD /* YJPopViewManager.m in Sources */,
+				2F7BB7C21E124DB4004B9C5A /* YJPopoverView.m in Sources */,
 				2F7BB7A51E1242B7004B9C5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +295,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJPopoverDemo/popoverDemo.pch";
 				INFOPLIST_FILE = YJPopoverDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dddd.YJPopoverDemo;
@@ -274,6 +308,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YJPopoverDemo/popoverDemo.pch";
 				INFOPLIST_FILE = YJPopoverDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dddd.YJPopoverDemo;
@@ -300,6 +336,7 @@
 				2F7BB7B91E1242B7004B9C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

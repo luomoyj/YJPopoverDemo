@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FLF-fB-iAH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="oKu-nt-wde"/>
+                        <viewControllerLayoutGuide type="bottom" id="pA2-w9-8ju"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="vLC-eA-rkt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koB-hN-zLi">
+                                <rect key="frame" x="512" y="144" width="78" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="popDown">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPopDownTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLd-hL-auw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRN-5D-1Qf">
+                                <rect key="frame" x="437" y="264" width="63" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="popLeft">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPopLeftTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRC-f9-wQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFW-1c-TGE">
+                                <rect key="frame" x="100" y="74" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="popRight">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPopRightTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOO-ZZ-XJm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1p-VM-88z">
+                                <rect key="frame" x="540" y="209" width="55" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="popUp">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTitleTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3I-Xo-i79"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="koB-hN-zLi" firstAttribute="top" secondItem="oKu-nt-wde" secondAttribute="bottom" constant="80" id="49u-kS-Spl"/>
+                            <constraint firstItem="NRN-5D-1Qf" firstAttribute="top" secondItem="oKu-nt-wde" secondAttribute="bottom" constant="200" id="4XT-Pl-3PB"/>
+                            <constraint firstAttribute="trailing" secondItem="koB-hN-zLi" secondAttribute="trailing" constant="10" id="KZ4-iX-LRu"/>
+                            <constraint firstItem="FFW-1c-TGE" firstAttribute="top" secondItem="oKu-nt-wde" secondAttribute="bottom" constant="10" id="Rfh-et-SxL"/>
+                            <constraint firstItem="j1p-VM-88z" firstAttribute="top" secondItem="oKu-nt-wde" secondAttribute="bottom" constant="145" id="o8C-HS-pJF"/>
+                            <constraint firstAttribute="trailing" secondItem="NRN-5D-1Qf" secondAttribute="trailing" constant="100" id="qVy-tv-PXi"/>
+                            <constraint firstAttribute="trailing" secondItem="j1p-VM-88z" secondAttribute="trailing" constant="5" id="qi4-u7-bIM"/>
+                            <constraint firstItem="FFW-1c-TGE" firstAttribute="leading" secondItem="vLC-eA-rkt" secondAttribute="leading" constant="100" id="tzK-GJ-aK8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mKu-b4-QDJ"/>
+                    <connections>
+                        <outlet property="btnPop" destination="j1p-VM-88z" id="QKO-vh-MvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="779" y="432"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BRm-Dj-qJ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FLF-fB-iAH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ft0-0W-FZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b33-Pi-LMF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6D-tc-0zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="432"/>
         </scene>
     </scenes>
 </document>

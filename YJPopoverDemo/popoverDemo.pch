@@ -1,0 +1,20 @@
+//
+//  popoverDemo.pch
+//  YJPopoverDemo
+//
+//  Created by d-engine on 16/12/28.
+//  Copyright © 2016年 yangjun. All rights reserved.
+//
+
+#ifndef popoverDemo_pch
+#define popoverDemo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "YJ_const.h"
+
+
+
+#endif /* popoverDemo_pch */
