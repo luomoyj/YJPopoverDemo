@@ -27,12 +27,6 @@
 
 @implementation YJPopoverController
 
-- (void)dealloc
-{
-    
-    NSLog(@"popoverController dealloc");
-}
-
 - (instancetype)initWithContentViewController:(UIViewController *)contentViewController popoverContentSize:(CGSize)popoverContentSize
 {
     self = [super init];
