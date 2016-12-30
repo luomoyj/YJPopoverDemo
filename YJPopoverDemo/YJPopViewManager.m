@@ -32,7 +32,7 @@
 - (UIView *)maskView
 {
     if (!_maskView) {
-        _maskView = [[UIView alloc] initWithFrame:kCurrentWindow.bounds];
+        _maskView = [[UIView alloc] initWithFrame:kYJCurrentWindow.bounds];
         _maskView.backgroundColor = [UIColor blackColor];
         _maskView.alpha = 0;
         
@@ -54,7 +54,7 @@
     
     self.contentView = view;
     
-    UIView *superView = kCurrentWindow;
+    UIView *superView = kYJCurrentWindow;
     [superView addSubview:self.maskView];
     
     view.alpha = 0;

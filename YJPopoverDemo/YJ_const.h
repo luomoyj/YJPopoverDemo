@@ -9,17 +9,19 @@
 #ifndef YJ_const_h
 #define YJ_const_h
 
-#define kCurrentWindow          ((UIWindow *)[[UIApplication sharedApplication].windows firstObject])
+#define kYJCurrentWindow          ((UIWindow *)[[UIApplication sharedApplication].windows firstObject])
 
-#define kScreenWidth            [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight           [UIScreen mainScreen].bounds.size.height
+#define kYJScreenWidth            [UIScreen mainScreen].bounds.size.width
+#define kYJScreenHeight           [UIScreen mainScreen].bounds.size.height
 
+#define kPopoverViewArrowHeight 4
 
+//箭头类型
 typedef NS_ENUM(NSUInteger, YJPopoverArrowDirection) {
-    YJPopoverArrowDirection_up,
-    YJPopoverArrowDirection_left,
-    YJPopoverArrowDirection_down,
-    YJPopoverArrowDirection_right
+    YJPopoverArrowDirection_up,         //箭头向上
+    YJPopoverArrowDirection_left,       //箭头向左
+    YJPopoverArrowDirection_down,       //箭头向下
+    YJPopoverArrowDirection_right       //箭头向右
 };
 
 #endif /* YJ_const_h */

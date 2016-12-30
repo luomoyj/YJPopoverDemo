@@ -9,13 +9,11 @@
 
 #import <UIKit/UIKit.h>
 
-extern const NSInteger kPopoverViewArrowHeight;
-
 @interface YJPopoverView : UIView
 
 //箭头方向
 @property (nonatomic, assign) YJPopoverArrowDirection arrowDirection;
-//箭头x坐标
-@property (nonatomic, assign) CGFloat arrowX;
+//箭头坐标, 上下箭头----x坐标， 左右箭头----y坐标
+@property (nonatomic, assign) CGFloat arrowLocation;
 
 @end

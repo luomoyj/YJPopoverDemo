@@ -8,10 +8,7 @@
 
 #import "YJPopoverView.h"
 
-const NSInteger kPopoverViewArrowHeight = 4;
-
 @interface YJPopoverView ()
-
 
 @end
 
@@ -35,14 +32,14 @@ const NSInteger kPopoverViewArrowHeight = 4;
     switch (self.arrowDirection) {
         case YJPopoverArrowDirection_up:
         {
-            CGContextMoveToPoint(context, self.arrowX, CGRectGetMinY(rect));
-            CGContextAddLineToPoint(context, self.arrowX - kPopoverViewArrowHeight, CGRectGetMinY(rect) + kPopoverViewArrowHeight);
+            CGContextMoveToPoint(context, self.arrowLocation, CGRectGetMinY(rect));
+            CGContextAddLineToPoint(context, self.arrowLocation - kPopoverViewArrowHeight, CGRectGetMinY(rect) + kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect) + kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMaxY(rect));
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMaxY(rect));
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMinY(rect) + kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, self.arrowX + kPopoverViewArrowHeight, CGRectGetMinY(rect) + kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, self.arrowX, CGRectGetMinY(rect));
+            CGContextAddLineToPoint(context, self.arrowLocation + kPopoverViewArrowHeight, CGRectGetMinY(rect) + kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, self.arrowLocation, CGRectGetMinY(rect));
         }
             break;
         case YJPopoverArrowDirection_left:
@@ -50,9 +47,9 @@ const NSInteger kPopoverViewArrowHeight = 4;
             CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMaxY(rect));
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, CGRectGetMaxY(rect));
-            CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, self.arrowX + kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, CGRectGetMaxX(rect), self.arrowX);
-            CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, self.arrowX - kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, self.arrowLocation + kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, CGRectGetMaxX(rect), self.arrowLocation);
+            CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, self.arrowLocation - kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect) - kPopoverViewArrowHeight, CGRectGetMinY(rect));
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
         }
@@ -61,9 +58,9 @@ const NSInteger kPopoverViewArrowHeight = 4;
         {
             CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, self.arrowX - kPopoverViewArrowHeight, CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, self.arrowX, CGRectGetMaxY(rect));
-            CGContextAddLineToPoint(context, self.arrowX + kPopoverViewArrowHeight, CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, self.arrowLocation - kPopoverViewArrowHeight, CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, self.arrowLocation, CGRectGetMaxY(rect));
+            CGContextAddLineToPoint(context, self.arrowLocation + kPopoverViewArrowHeight, CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMaxY(rect) - kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMinY(rect));
             CGContextAddLineToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
@@ -72,9 +69,9 @@ const NSInteger kPopoverViewArrowHeight = 4;
         case YJPopoverArrowDirection_right:
         {
             CGContextMoveToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, CGRectGetMinY(rect));
-            CGContextAddLineToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, self.arrowX - kPopoverViewArrowHeight);
-            CGContextAddLineToPoint(context, CGRectGetMinX(rect), self.arrowX);
-            CGContextAddLineToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, self.arrowX + kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, self.arrowLocation - kPopoverViewArrowHeight);
+            CGContextAddLineToPoint(context, CGRectGetMinX(rect), self.arrowLocation);
+            CGContextAddLineToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, self.arrowLocation + kPopoverViewArrowHeight);
             CGContextAddLineToPoint(context, CGRectGetMinX(rect) + kPopoverViewArrowHeight, CGRectGetMaxY(rect));
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMaxY(rect));
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect), CGRectGetMinY(rect));
