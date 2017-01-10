@@ -85,7 +85,6 @@
                 viewRight = CGRectGetMidX(contentRect) + self.popoverContentSize.width / 2;
                 if (viewRight > kYJScreenWidth) {
                     viewRight = kYJScreenWidth - kPopoverViewMaginToScreen;
-                    
                 }
                 self.popoverView.arrowLocation = CGRectGetWidth(self.popoverView.bounds) - (viewRight - CGRectGetMidX(contentRect));
                 self.view.frame = CGRectMake(viewRight - self.popoverContentSize.width, CGRectGetMaxY(contentRect) + kPopoverViewMaginToBtn, self.popoverContentSize.width, self.popoverContentSize.height);
@@ -102,7 +101,7 @@
             //点击视图位于屏幕上方时， 判断弹出视图是否超出屏幕上边缘，如果超出就将弹出视图整个下移；
             //点击视图位于屏幕下方时， 判断弹出视图是否超出屏幕下边缘，如果超出就将弹出视图整个上移;
             if (CGRectGetMidY(contentRect) <= CGRectGetMidY(kYJCurrentWindow.bounds)) {
-                viewTop = CGRectGetMidY(contentRect) - self.popoverContentSize.height/ 2;
+                viewTop = CGRectGetMidY(contentRect) - self.popoverContentSize.height / 2;
                 if (viewTop < 0) {
                     viewTop = kPopoverViewMaginToScreen;
                 }
@@ -184,8 +183,23 @@
 
 - (void)presentPopoverFromBarButtonItem:(UIBarButtonItem *)item permittedArrowDirections:(YJPopoverArrowDirection)arrowDirections animated:(BOOL)animated
 {
-
+    
 }
+
+//- (void)btnTapAction:(UIButton *)btn
+//{
+//    YJViewController *yjViewController = [[YJViewController alloc] init];
+//    YJViewController.title = @"关于我们";
+//    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:YJViewController];
+//    UIPopoverController* abourtPopoverController = [[UIPopoverController alloc] initWithContentViewController:navigation];
+//    abourtPopoverController.popoverContentSize = CGSizeMake(320,480);
+//
+//    //弹出关于界面
+//    [abourtPopoverController presentPopoverFromRect:btn.frame //中心点是用来画箭头的，如果中心点如果出了屏幕，系统会优化到窗口边缘
+//                                             inView:btn.superview
+//                           permittedArrowDirections:UIPopoverArrowDirectionDown //箭头方向
+//                                           animated:YES];
+//}
 
 #pragma mark -- setter
 - (YJPopoverView *)popoverView
